@@ -11,7 +11,7 @@ public class DBInserter {
 	public void insertMe(String pswd) {
 		dbconn=dbConnection();
 		try {
-			ps=dbconn.prepareStatement("INSERT INTO eggs_code (egg_coded,egg_status,game_count) VALUES (?,0,0);");
+			ps=dbconn.prepareStatement("INSERT INTO eggs (code,status) VALUES (?,0);");
 			ps.setString(1, pswd);
 			ps.executeUpdate();
 			dbconn.close();
