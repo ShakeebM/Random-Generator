@@ -1,4 +1,4 @@
-package com.jenaneggs.random;
+package com.shak.random;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -9,16 +9,17 @@ public class DBInserter {
 	private Connection dbconn;
 	private PreparedStatement ps;
 	public void insertMe(String pswd) {
-		dbconn=dbConnection();
-		try {
-			ps=dbconn.prepareStatement("INSERT INTO eggs (code,status) VALUES (?,0);");
-			ps.setString(1, pswd);
-			ps.executeUpdate();
-			dbconn.close();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+//		dbconn=dbConnection();
+//		try {
+//			ps=dbconn.prepareStatement("INSERT INTO eggs (code,status) VALUES (?,0);");
+//			ps.setString(1, pswd);
+//			ps.executeUpdate();
+//			dbconn.close();
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+		System.out.println(pswd);
 		
 	} 
 

@@ -1,4 +1,4 @@
-package com.jenaneggs.random;
+package com.shak.random;
  
 import java.util.Random;
  
